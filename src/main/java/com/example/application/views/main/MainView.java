@@ -19,7 +19,7 @@ public class MainView extends HorizontalLayout {
         name = new TextField("Your name");
         sayHello = new Button("Say hello");
         sayHello.addClickListener(e -> {
-            Notification.show("Hello " + name.getValue());
+            Notification.show(name.getValue() + " is a Friendino");
         });
         sayHello.addClickShortcut(Key.ENTER);
 
